@@ -1,7 +1,5 @@
-%h1  This is index!!
-
 - @articles.each do |article|
-	%h2= article.title
+	%h2= link_to article.title, article
 	%p
 		Published ad
 		= article.created_at.strftime('%b %d, %Y')
